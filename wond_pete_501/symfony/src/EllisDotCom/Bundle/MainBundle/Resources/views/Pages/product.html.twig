@@ -1,0 +1,56 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# product page extends the base twig template and defines its content as below #}
+    <section id="content">
+        <article class="row">
+            <h3 class="span2 smaller">PRODUCT</h3>
+            <p class="span6 offset4 text-right">
+                <a href="{{ path('EllisDotCom_basket') }}">ITEMS IN BASKET: {{ basket.basketTotalItems }}
+                    {# conditional updates basket image when more than one item in the basket #}
+                    {% if basket.basketTotalItems == 0 %}
+                        <img src="{{ asset ('img/style/sadSack.jpg') }}">
+                    {% else %}
+                        <img src="{{ asset ('img/style/happySack.jpg') }}">
+                    {% endif %}
+                </a>
+            </p>    
+        </article>
+        {% for flashMessage in app.session.flashbag.get('notice') %}
+            <div class="flash-notice alert alert-success">
+                {{ flashMessage }}
+            </div>
+        {% endfor %}
+        <article class="row">
+            <img id="artwork" src="{{ asset ('img/products/'~product.filename~'') }}" class="span6">
+            <div id="productDiv" class="span4 offset1">
+                {# form used to send selected item amount and price via addItemToBasket route #}
+                <form action="{{ path('EllisDotCom_addItemToBasket', { slug: product.slug }) }}" method="POST">
+                    <h3 class="smaller">{{ product.name|upper }}</h3>
+                    <p>{{ product.description }}</p>
+                    {# price shown in label, value set in hidden input as not effected by user #}
+                    <label>£{{ product.price|number_format(2) }}</label>
+                    <input type="hidden" name="_price" value="{{ product.price }}" />
+                    {# conditional prints out html appropriate to whether item is in stock or not #}
+                    {% if product.stock == 0 %}
+                        <p>ITEM IS OUT OF STOCK</p>
+                    {% else %}
+                        {# amount selected from dynamically created dropdown... #}
+                        <label>Select amount:</label>
+                        <select id="dropdown" name="_amount">
+                            {# for loop creates a select dropdown the same length as the number of items in stock #}
+                            {% for i in 1..product.stock %}
+                                <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}    
+                        </select>
+                        <div class="adminControls">
+                            <input type="submit" value="ADD TO BASKET" class="btn btn-inverse"/>
+                        </div>
+                    {% endif %}
+                </form>
+                <div>
+                    <a href="{{ path('EllisDotCom_shop') }}">BACK TO SHOP</a>
+                </div>
+            </div>
+        </article>
+    </section>
+{% endblock %}

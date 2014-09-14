@@ -1,0 +1,29 @@
+{% extends 'EllisDotComMainBundle:Admin:dashboard.html.twig' %}
+{% block adminView %}
+	<div>
+		<h3 class="smaller">CONFIRM RECORD DELETION</h3>
+		{# form used to call controller function via the POST method #}
+	    <form action="{{ path('EllisDotCom_DeleteAction', { table: table, id: record.id }) }}" method="post">
+            {# conditional to show detail of record depending on parent table fields... #}
+			{% if table == 'portfolio' %}
+			{# html for portfolio record deletion... #}
+				<p>Are you sure you want to delete "{{ record.title|upper }}" from your portfolio table?</p>
+				<img src="{{ asset ('img/portfolio/'~record.filename~'') }}" alt="no image">
+			{% elseif table == 'categories' %}
+			{# html for categories record deletion... #}
+				<p>Are you sure you want to delete "{{ record.category|upper }}" from your categories table?</p>
+				<img src="{{ asset ('img/categories/'~record.filename~'') }}" alt="no image">
+			{% elseif table == 'products' %}
+			{# html for products record deletion... #}
+				<p>Are you sure you want to delete "{{ record.name|upper }}" from your products table?</p>
+				<img src="{{ asset ('img/products/'~record.filename~'') }}" alt="no image">
+		    {# end of conditional... #}
+		    {% endif %}
+            <!-- submit button -->
+            <div class="adminControls">
+                <button type="submit" class="btn btn-danger">DELETE</button>
+				<a href="{{ path('EllisDotCom_ListView', { table: table }) }}" class="btn btn-inverse">CANCEL</a>
+            </div>
+        </form>
+	</div>
+{% endblock %}

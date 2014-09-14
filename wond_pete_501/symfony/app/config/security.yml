@@ -1,0 +1,33 @@
+security:
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        secured_area:
+            pattern:    ^/
+            anonymous: ~
+            form_login:
+                login_path: login
+                check_path: login_check
+                default_target_path: /dashboard
+            logout:
+                path:   /logout
+                target: /login
+                invalidate_session: false
+
+    access_control:
+        - { path: ^/cms, roles: ROLE_ADMIN }
+
+    providers:
+        in_memory:
+            memory:
+                users:
+                    admin: { password: wondmin, roles: [ 'ROLE_ADMIN' ] }
+
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext

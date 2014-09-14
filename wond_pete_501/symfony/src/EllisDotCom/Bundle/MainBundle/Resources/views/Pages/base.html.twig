@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="{% block imageMeta %}{% endblock %}"/>
+        <meta name="description" content="Portfolio site of London based illustrator and artist Kate Ellis"/>
+        <meta name="author" content="Kate Ellis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="screen">
+        <title>Kate Ellis Illustration</title>
+    </head>
+    <body>
+        <!-- page mark up... -->
+        <section class="container">
+            <header class="row"> 
+                <article class="span4">
+                    <a href="{{ path('EllisDotCom_homepage') }}"><img src="{{ asset('img/style/logo.jpg') }}"></a>
+                </article>
+                <nav class="span6 offset2 text-right">
+                    <ul class="inline">
+                        <li><a href="{{ path('EllisDotCom_news') }}">NEWS</a></li>
+                        <li><a href="{{ path('EllisDotCom_portfolio') }}">PORTFOLIO</a></li>
+                        <li><a href="{{ path('EllisDotCom_about') }}">ABOUT</a></li>
+                        <li><a href="{{ path('EllisDotCom_contact') }}">CONTACT</a></li>
+                        <li><a href="{{ path('EllisDotCom_shop') }}">SHOP</a></li>
+                    </ul>
+                </nav>               
+            </header>
+
+            {% block content %}{# content of frontend pages will be populated here by templates that extend this file #}{% endblock %}
+            
+            <footer class="row text-center">
+                <ul class="span4 inline">
+                    <li>
+                        <a href="mailto:kate@kateellisillustration.com?Subject=Hello%20Kate">
+                            <img src="{{ asset ('img/style/emailBtn.jpg') }}" alt="EM" class="socialBtn">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/kateellisillustration" target="blank">
+                            <img src="{{ asset ('img/style/facebookBtn.jpg') }}" alt="FB" class="socialBtn">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ellistration" target="blank">
+                            <img src="{{ asset ('img/style/twitterBtn.jpg') }}" alt="TW" class="socialBtn">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://kateellisillustration.tumblr.com" target="blank">
+                            <img src="{{ asset ('img/style/tumblrBtn.jpg') }}" alt="TM" class="socialBtn">
+                        </a>
+                    </li>
+                </ul>
+                <p class="span4">All work (c) Kate Ellis, steal at your peril</p>
+                <p class="span4">Site design by <a href="#">WondWorks</a></p>
+            </footer>
+        </section>
+    </body>
+</html>

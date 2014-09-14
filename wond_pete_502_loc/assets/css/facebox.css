@@ -1,0 +1,225 @@
+/* @override 
+	http://127.0.0.1:8888/css/facebox.css
+*/
+	
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+#facebox .popup {
+  position: relative;
+  border: 1px solid #6a6a6a;
+}
+
+#facebox table {
+  border-collapse: collapse;
+}
+
+#facebox td {
+  border-bottom: 0;
+  padding: 0;
+}
+
+#facebox .body {
+  background: #fff;
+  width: 370px;
+  padding: 10px;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+/*
+#facebox .footer {
+  border-top: 1px solid #DDDDDD;
+  padding-top: 5px;
+  margin-top: 10px;
+  text-align: right;
+} 
+*/
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+
+* html #facebox_overlay { /* ie6 hack */
+  position: absolute;
+  height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+/* PopupBox */
+
+#popupbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+  background-color: white;
+  border: 3px solid #777;
+  display: none;
+	padding: 20px;
+	}
+
+#popupbox #close_button {
+	width: 30px;
+	height: 30px;
+	z-index: 20;
+	background-image: url(http://localhost:8888/wond_pete_502_loc/assets/img/close_button.png);
+	position: absolute;
+	top: -15px;
+	left: -17px;
+}
+
+#popupbox #close_button:hover {
+	background-position: 0 bottom;
+}
+
+#popupcontent {
+	min-width: 500px;
+}
+
+#popupcontent h1 {
+	font-size: 18px;	margin-bottom: 30px;
+	padding-bottom: 10px;	padding-left: 10px ;
+	padding-top: 10px;}
+
+
+#popupcontent.airway h1 {
+	border-bottom: 1px solid #a3c3c6;
+}
+
+#popupcontent.anaesthesia h1 {
+	border-bottom: 1px solid #b9b7c6;
+}
+
+#popupcontent.critical h1 {
+	border-bottom: 1px solid #95b7ab;
+}
+
+#popupcontent.oxygen h1 {
+	border-bottom: 1px solid #ac9067;
+
+}
+
+#popupcontent span.code {
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+#popupcontent img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+#popupcontent table {
+	font-size: 13px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#popupcontent td, #popupcontent th  {
+	padding: 5px 20px;
+}
+
+#popupcontent td {
+	text-align: center;
+}
+
+#popupcontent.airway td {
+	background-color: #00aec5;
+}
+
+#popupcontent.anaesthesia td {
+	background-color: #8077b7;
+}
+
+#popupcontent.critical td {
+	background-color: #009470;
+}
+
+#popupcontent.oxygen td {
+	background-color: #f68428;
+}
+
+
+#popupcontent th {
+	border-width: 1px;
+	border-top-style: solid;
+}
+
+#popupcontent.airway th {
+	color:#00aec5;
+}
+
+#popupcontent.anaesthesia th {
+	color: #8077b7;
+}
+
+#popupcontent.critical th {
+    color: #009470;
+}
+
+#popupcontent.oxygen th {
+	color: #f68428;
+
+}
+
+#popupbox span.pdf a:hover, #popupbox span.contact a:hover {
+	text-decoration: underline;
+}
+
+#popupbox #foot {
+	background-color: #c9c9c9;
+	overflow: hidden;
+	margin-top: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#popupbox #foot a {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#popupbox #foot span.close_window {
+	float: right;
+	margin-right: 10px;
+}

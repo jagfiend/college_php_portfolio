@@ -1,0 +1,17 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# news page extends the base twig template and defines its content with ajax driven tumblr feed #}
+    <section id="content">
+        <h3 class="smaller">NEWS</h3>
+        <!-- integrated tumblr blog... -->
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="{{ asset ('js/tumblrFeed.js') }}"></script>
+        <script src="{{ asset ('js/pagination.js') }}"></script>
+        <div id="feed">If you are reading this message, the Tumblr feed hasnt loaded...sorry about that...
+            <script>
+                // call function to return first page of results...
+                $(document).ready(getFeed(3,0,1));
+            </script>
+        </div>
+    </section>
+{% endblock %}

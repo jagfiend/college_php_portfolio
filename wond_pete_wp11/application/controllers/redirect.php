@@ -1,0 +1,6 @@
+<?php // controller for redirect page...
+// views...
+include(VIEWS.'header.php');
+include(VIEWS.'contentRedirect.php');
+include(VIEWS.'footer.php');
+?>

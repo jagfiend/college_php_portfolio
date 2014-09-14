@@ -1,0 +1,532 @@
+/* @override 
+	http://localhost:8888/css/global.css
+*/
+/* MediaServer safe */
+/* Main Structure */
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #565656;
+	font: 14px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	color: #262626;
+}
+
+a {
+	color: #262626;
+}
+
+sub { 
+	font-size: smaller;
+	vertical-align: sub;
+}
+
+sup { 
+	font-size: smaller;
+	vertical-align: super;
+}
+
+#top {
+	background-color: #e5e3e3;
+}
+
+#wrapper, #wrapper_bottom {
+	margin-right: auto;
+	margin-left: auto;
+	width: 980px;
+	position: relative;
+}
+
+#header .logo {
+  float: left;
+  display: block;
+}
+
+#header p {
+	display: block;
+	padding-top: 23px;
+	width:250px;
+	float: left;
+}
+
+/* SocialBar  */
+#social_bar {
+  margin-top: 15px;
+  /*margin-left: 80px;*/
+  float: left;
+}
+
+#social_bar img {
+  border-radius: 5px;
+}
+
+#social_bar a {
+  margin-right: 10px;
+}
+
+/*  Navigation */
+#navigation {
+  clear: both;
+	height: 35px;
+	margin-right: 20px;
+	margin-left: 20px;
+	background-image: url(http://localhost:8888/wond_pete_502_loc/assets/img/nav_bg.jpg);
+	z-index: 10;
+	position: relative
+}
+
+#navigation a {
+	text-decoration: none;
+	color: white;
+	z-index: 12;
+	width: 80px;
+	display: block;
+	height: 25px;
+	padding-top: 10px;
+}
+
+#navigation ul.buttons li {
+	width: 80px;
+	height: 35px;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	z-index: 12;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#navigation ul.buttons li:hover {
+	background-color: #4b9e8c;
+}
+
+#navigation a:hover {
+	background-image: url(http://localhost:8888/wond_pete_502_loc/assets/img/nav_bg_hover.jpg);
+	cursor: pointer;
+}
+
+#navigation ul.buttons li.first a {
+	background-image: url(http://localhost:8888/wond_pete_502_loc/assets/img/nav_bg_first.jpg);
+}
+
+#navigation ul.buttons li.first a:hover {
+	background-image: url(http://localhost:8888/wond_pete_502_loc/assets/img/nav_bg_first_hover.jpg);
+}
+
+#navigation .sub {
+	display: none;
+	background-color: #4b9e8c;
+	width: 130px;
+	z-index: 100;
+	}
+
+#navigation .sub a {
+	display: block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-size: 12px;
+	line-height: normal;
+	width: 130px;
+	height: auto;
+}
+
+#navigation .sub a:hover {
+	background-color: #377c6d;
+	background-image: none;
+}
+
+/* Search */
+
+#search {
+	width: 290px;
+	float: right;
+	height: 29px;
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/nav_bg_last.jpg) no-repeat right top;
+	padding-top: 6px;
+	position: absolute;
+	right: 0;
+}
+
+#search label {
+	color: white;
+	font-size: 12px;
+	margin-right: 12px;
+	margin-left: 8px;
+}
+
+#search input {
+	width: 200px;
+	height: 18px;
+}
+
+
+#searchDIV {
+	display: none;
+	background-color: #4da08e;
+	color: white;
+	font-size: 12px;
+	margin-top: 6px;
+	width: 271px;
+	margin-left: -1px;
+	margin-bottom: -3px;
+}
+
+#searchDIV li {
+	vertical-align: middle;
+	text-align: left;
+	padding: 10px;
+}
+
+#searchDIV a {
+	text-decoration: none;
+	color: white;
+	background-image: none;
+	width: auto;
+	height: auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#searchDIV a:hover {
+	background-color: #377c6d;
+	background-image: none;
+}
+
+#searchDIV li:hover {
+	background-image: none;
+}
+
+#deleteDIV {
+	display: none;
+	width: 13px;
+	height: 16px;
+	float: right;
+	position: absolute;
+	top: 11px;
+	right: 14px;
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/erase.png) no-repeat center center;
+}
+
+.moreSearch {
+	color: white;
+	display: block;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 10px;
+	padding-left: 1px;
+	padding-right: 1px;
+	background-color: #353535;
+}
+
+.moreSearch a, .moreSearch a:hover {
+	text-decoration: none;
+	font-style: italic;
+	color: white;
+	background-color: #353535;
+}
+
+/* Choose country box */
+
+#choose_country {
+	display: block;
+	width: 140px;
+	float: right;
+	/*margin-right: 20px;*/
+	padding-top: 23px;
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/jp_flag.jpg) no-repeat 65px 23px;
+	padding-bottom: 20px;
+	color: #8f8c91;
+	cursor: pointer;
+	font-size: 12px;
+	color: #333234;
+	opacity: 0.4;
+	padding-right: 30px;
+}
+
+#choose_country:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+
+#international_box {
+	background-color: #4f4f4f;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	display: none;
+	color: #e5e3e3;
+}
+
+#international_box ul {
+	overflow: auto;
+	text-align: center;
+}
+
+#international_box li {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: pointer;
+	display: inline;
+	}
+
+#international_box li a { 
+	display: inline-block;
+	padding: 10px;
+	}
+	
+#int_close { 
+	display: inline-block;
+	}
+
+#international_box li:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* Newsletter Signup */
+#newsletter_signup {
+	float: right;
+	background-color: #474848;
+	padding: 10px 20px 15px;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px;
+	border: 1px solid #3d3d3d;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	}
+	
+#newsletter_signup legend { 
+	font-size: 12px;
+	font-weight: bold;
+	color: #cfcdcd;
+	padding-bottom: 1px;
+	}
+	
+#newsletter_signup p  {
+	font-size: 10px;
+	margin-bottom: 10px;
+	}
+	
+#newsletter_signup label {
+	float: left;
+	clear: both;
+	padding-top: 7px;
+	width: 40px;
+	}
+	
+#newsletter_signup input[type=text] {
+	float: left;
+	margin-top: 4px;
+	}
+	
+#newsletter_signup input[type=submit] {
+	margin-top: 30px;
+	margin-left: 9px;
+	}
+
+#newsletter_signup a {
+	text-decoration: underline !important;
+	}
+
+/* Content */
+
+#content {
+	overflow: show;
+	padding: 10px;
+	background: white url(http://localhost:8888/wond_pete_502_loc/assets/img/content_top_bg.jpg) no-repeat 0 top;
+}
+
+#content a {
+	text-decoration: none;
+}
+
+#content.underline a:hover {
+	text-decoration: underline;
+}
+
+/* Footer */
+
+#footer {
+	height: 25px;
+	background-image: url(http://localhost:8888/wond_pete_502_loc/assets/img/footer_bg.jpg);
+	font-size: 12px;
+	color: #666565;
+	}
+
+#footer p {
+	float: left;
+	margin-top: 7px;
+}
+
+#footer p.first {
+	width: 240px;
+	padding-left: 20px;
+}
+
+#footer p.second {
+	width: 460px;
+	text-align: center;
+}
+
+#footer p.third {
+	width: 240px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+/* Sitemap */
+
+#sitemap {
+	margin-top: 20px;
+	color: #b2b1b1;
+	font-size: 12px;
+	padding-left: 10px;
+	overflow: visible;
+	margin-bottom: 20px;
+}
+
+#sitemap ul.col2width {
+	float: left;
+	width: 140px;
+	display: block;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#sitemap ul.col2width li {
+	margin-bottom: 5px;
+}
+
+#sitemap a {
+	text-decoration: none;
+	color: #b2b1b1;
+	background-image: none !important;
+	padding: 0 !important;
+}
+
+#sitemap h3, #sitemap h3 a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #cfcdcd;
+}
+
+
+/* Iconize */
+
+.external {
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/external_icon.gif) no-repeat left 1px;
+	padding-left: 17px;
+}
+
+
+/* Awesome button */
+
+.awesome_button {
+	margin-top: 10px;
+	padding: 5px 10px 6px !important;
+	color: white !important;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25) !important;
+	cursor: pointer;
+	font-size: 13px;
+	background-color: #8b8b8b;
+	border-top-width: 0 !important;
+	border-right-width: 0 !important;
+	border-left-width: 0 !important;
+}
+
+.awesome_button:hover {
+	background-color: #6a6a6a;
+	text-decoration: none !important;
+}
+
+/* Awesome button sizes */
+
+.small_b {
+	font-size: 12px;
+	padding: 4px 6px 4px 6px !important;
+}
+
+/* Awesome button colours */
+
+.light_blue {
+	background-color: #49a1dc;
+}
+
+.light_blue:hover {
+	background-color: #3b86bb;
+}
+
+.light_green {
+	background-color: #7fa79e;
+}
+
+.light_green:hover {
+	background-color: #678982;
+}
+
+/* Global notification */ 
+div.changes_notif {
+	font-size: 12px;
+	margin: 30px 10px 10px;
+	color: #6f6f6f;
+	overflow: hidden;
+	clear: both;
+}
+
+div.changes_notif p {
+	float: left;
+	display: block;
+	padding-top: 3px;
+}
+
+div.changes_notif a {
+	float: right;
+	margin-right: 30px;
+}
+
+/* 404 */
+
+body.fourofour h1 {
+	font-size: 20px;
+	color: #4b9e8c;
+	width: 450px;
+	display: block;
+	margin: 25px auto 10px;
+}
+
+body.fourofour p.sorry {
+	width: 450px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	line-height: 20px;
+}
+
+/* Clear hack */
+
+.clear:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clear {
+	min-height: 1px;
+}
+
+* html .clear {
+	height: 1px;
+}

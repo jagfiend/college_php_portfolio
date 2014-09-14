@@ -1,0 +1,222 @@
+/* @override 
+	http://media.linux.intersurgical.com/global/styles/news.css
+	http://localhost2:8888/css/news.css
+	http://localhost:8888/css/news.css
+*/
+
+h1 {
+	font-size: 20px;
+	color: #64b6a7;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#content.news {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#dev {
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	margin: 10px auto;
+	width: 220px;
+	display: none;
+}
+
+div.post {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	width: 630px;
+	overflow: auto;
+}
+
+div.post span.category {
+	display: block;
+	font-size: 11px;
+	border-top: 1px dotted #64b6a7;
+	padding-top: 5px;
+	clear: both;
+}
+
+div.post h2 {
+	font-size: 16px;
+	color: #64b6a7;
+}
+
+div.post div.title {
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+	margin-left: -30px;
+	padding-left: 30px;
+	border-bottom: 1px dotted #64b6a7;
+}
+
+body.news div.post p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: block;
+	float: right;
+	width: 450px;
+}
+
+.imageFrame{
+	display:block;
+	float: left;
+	width:162px;
+}
+
+.textFrame{
+	margin-left: 10px;
+	display: block;
+	float: left;
+	width:425px;
+}
+
+.textFrame table{
+
+}
+
+div.post img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #7f7f7f;
+}
+
+
+.left {
+	margin-right: 20px;
+	float: left;
+}
+
+.middle {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.external, .extrenal:hover {
+	color: #2c4c7f;
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/external_icon.gif) no-repeat left 1px;
+	padding-left: 19px;
+	margin-left: 3px;
+}
+
+div.post div.text {
+	overflow: auto;
+	margin-bottom: 10px;
+}
+
+#cat {
+	float: right;
+	padding: 10px;
+	margin-right: 0;
+	width: 200px;
+}
+
+body.news #cat {
+	margin-top: -10px;
+}
+
+#cat h3, #events h3, #news h3 {
+	font-size: 16px;
+	margin-bottom: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	padding-bottom: 2px;
+	color: #64b6a7;
+}
+#cat h3 a, #events h3 a, #news h3 a {color: #64b6a7;}
+#cat li a, #events li a, #news li a {color: #545454;}
+
+#cat li, #events li, #news li {
+	margin-top: 5px;
+	font-size: 13px;
+}
+
+a.prev_page {
+	float: left;
+	display: block;
+	width: 140px;
+	background: url(http://media.intersurgical.com/global/elements/prev_low.jpg) no-repeat left top;
+	height: 20px;
+	padding-left: 30px;
+	color: #7f8080;
+	font-size: 11px;
+	padding-top: 5px;
+	margin-top: 0 !important;
+	clear: none !important;
+}
+
+a.prev_page:hover {
+	background: url(http://media.intersurgical.com/global/elements/prev_hi.jpg) no-repeat left top;
+	color: #000;
+}
+
+a.next_page {
+	float: right;
+	display: block;
+	width: 140px;
+	background: url(http://media.intersurgical.com/global/elements/next_low.jpg) no-repeat right top;
+	height: 20px;
+	color: #7f8080;
+	font-size: 11px;
+	padding-top: 5px;
+	padding-right: 30px;
+	text-align: right;
+	clear: none !important;
+}
+
+a.next_page:hover {
+	background: url(http://media.intersurgical.com/global/elements/next_hi.jpg) no-repeat right top;	color: #000;
+}
+
+
+/* News */
+
+#events {
+	margin-top: -10px;
+}
+
+#events, #news {
+	float: right;
+	clear: right;
+	padding: 10px;
+	margin-right: 0;
+	width: 200px;
+}
+
+#news {
+	margin-top: -10px;
+}
+
+#events li, #news li {
+	margin-top: 10px;
+}
+
+
+/* Events */
+
+h3 span {
+	font-size: 12px;
+	color: gray;
+}
+
+h3 span.date {
+	float: right;
+}
+
+body.events div.post p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: none;
+}
+
+body.events div.post a {
+	clear: both;
+	display: block;
+	margin-top: 10px;
+}

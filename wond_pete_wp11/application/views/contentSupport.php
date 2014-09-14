@@ -1,0 +1,49 @@
+				<div id="content"> <!-- content div -->
+					<div class="blurb">Need help using the site? Read on McDuff:</div>
+					<div class="largeContent">
+						<h2>A Section</h2>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h2>A Section</h2>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h2>A Section</h2>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h2>A Section</h2>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+						<h3>A Question</h3>
+						<p>An answer...</p>
+					</div>
+				</div> <!-- end of content div -->

@@ -1,0 +1,78 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# basket page extends the base twig template and defines its content as below #}
+    <section id="content">
+        <article class="row">
+            <h3 id="inlineHeader" class="span2 smaller">BASKET</h3>
+            <a id="return" href="{{ path('EllisDotCom_shop') }}" class="span2 text-right">BACK TO SHOP</a>    
+        </article>
+        {% for flashMessage in app.session.flashbag.get('notice') %}
+            <div class="flash-notice alert alert-success">
+                {{ flashMessage }}
+            </div>
+        {% endfor %}
+        <article>
+            {# conditional checks for items in basket and displays page as appropriate... #}
+            {% if basket.basketTotalItems == 0 %}
+                <div id="basket">Your basket is empty...</div>
+            {% else %}
+                <table id="basket" class="table">
+                    <thead>
+                        <tr>
+                            <td>Item</td>
+                            <td>Quantity</td>
+                            <td>Remove</td>
+                            <td>Price</td>
+                            <td>Item Total</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {# first for loop runs over the indices of each item in the basket... #}
+                        {% for keys, index in basket.basketItems|keys %}
+                            {# second for loop runs over detail of each item by index... #}
+                            {% for key, item in basket.basketItems[index] %}
+                                <tr>
+                                    <td>{{ key }}</td>
+                                    <td>{{ item.amount }}</td>
+                                    {# link remove selected item from basket... #}
+                                    <td><a href="{{ path('EllisDotCom_removeItemFromBasket', { index: index, slug: key }) }}"><i class="icon-trash"></i></a></td>
+                                    <td>£{{ item.price|number_format(2) }}</td>
+                                    <td>£{{ item.total|number_format(2) }}</td>
+                                </tr>
+                            {% endfor %}
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Sub-Total:</td>
+                            <td>£{{ basket.basketSubTotal|number_format(2) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Shipping:</td>
+                            <td>£{{ basket.basketShippingTotal|number_format(2) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total:</td>
+                            <td>£{{ basket.basketTotal|number_format(2) }}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="span6 offset8">
+                    {# link to clear basket... #}
+                    <a class="btn btn-inverse" href="{{ path('EllisDotCom_clearBasket') }}">CLEAR BASKET</a>
+                    {# link to save basket details to orders table... #}
+                    <a class="btn btn-inverse" href="{{ path('EllisDotCom_checkoutBasket') }}">CHECKOUT</a>
+                </div>
+            {% endif %}
+        </article>
+    </section>
+{% endblock %}

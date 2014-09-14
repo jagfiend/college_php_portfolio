@@ -1,0 +1,187 @@
+
+/* Header Backgrounds */
+
+.airwayHB,
+#prodGroups li#airway h2,
+#pl1.airway h1,
+span#mainheader.airway {
+	background-color: #00aec5;
+}
+
+.anaesthesiaHB,
+#prodGroups li#anaesthesia h2,
+#pl1.anaesthesia h1,
+span#mainheader.anaesthesia {
+	background-color: #8077b7;
+}
+
+.criticalHB,
+#prodGroups li#critical h2,
+#pl1.critical h1,
+span#mainheader.critical {
+	background-color: #009470;
+}
+
+.oxygenHB,
+#prodGroups li#oxygen h2,
+#pl1.oxygen h1, span#mainheader.oxygen {
+	background-color: #f68428;
+}
+
+/* Page Backgrounds */
+
+.airwayPB,
+#prodGroups li#airway, 
+#pl3.airway .products li:hover .productname,
+#products .cat1 li,
+#products .cat1 li:hover .productname {
+	background-color: #a6e7ef;
+}
+
+.anaesthesiaPB,
+#prodGroups li#anaesthesia,
+#pl3.anaesthesia .products li:hover .productname,
+#products .cat2 li,
+#products .cat2 li:hover .productname {
+	background-color: #d4d1e7;
+}
+
+.criticalPB,
+#prodGroups li#critical,
+#pl3.critical .products li:hover .productname,
+#products .cat3 li,
+#products .cat3 li:hover .productname {
+	background-color: #b3dfd4;
+}
+
+.oxygenPB,
+#prodGroups li#oxygen,
+#pl3.oxygen .products li:hover .productname, 
+#products .cat4 li,
+#products .cat4 li:hover .productname {
+	background-color: #fcdabf;
+}
+
+/* Highlight (dark) Backgrounds */
+
+.airwayDB,
+#pl3.airway .products li .productname,
+#products .cat1 li .productname,
+#pl3.airway table.product tbody td.productname,
+div.featured_products ul.cat_1 li {
+	background-color: #d3f3f7;
+}
+
+.anaesthesiaDB,
+#pl3.anaesthesia .products li .productname,
+#products .cat2 li .productname,
+#pl3.anaesthesia table.product tbody td.productname,
+div.featured_products ul.cat_2 li {
+	background-color: #eae8f3;
+}
+
+.criticalDB,
+#pl3.critical .products li .productname,
+#products .cat3 li .productname,
+#pl3.critical table.product tbody td.productname,
+div.featured_products ul.cat_3 li {
+	background-color: #d9efea;
+}
+
+.oxygenDB,
+#pl3.oxygen .products li .productname,
+#products .cat4 li .productname,
+#pl3.oxygen table.product tbody td.productname,
+div.featured_products ul.cat_4 li {
+	background-color: #feeddf;
+}
+
+
+
+/* Highlight (dark) Hover Backgrounds */
+
+.airwayDBh,
+div.featured_products ul.cat_1 li:hover {
+	background-color: #d1f7fc;
+}
+
+.anaesthesiaDBh,
+div.featured_products ul.cat_2 li:hover {
+	background-color: #eeebfe;
+}
+
+.criticalDBh,
+div.featured_products ul.cat_3 li:hover {
+	background-color: #beeada;
+}
+
+.oxygenDBh,
+div.featured_products ul.cat_4 li:hover {
+	background-color: #ffd79b;
+}
+
+/* Borders */
+
+.airwayBR,
+#pl3.airway h2,
+#pl3.airway img.prdGrpImg,
+#pl3.airway table.product tbody td {
+	border-color: #a3c3c6;
+}
+
+.anaesthesiaBR,
+#pl3.anaesthesia h2,
+#pl3.anaesthesia img.prdGrpImg,
+#pl3.anaesthesia table.product tbody td  {
+	border-color: #b9b7c6;
+}
+
+.criticalBR,
+#pl3.critical h2,
+#pl3.critical img.prdGrpImg,
+#pl3.critical table.product tbody td {
+	border-color: #95b7ab;
+}
+
+.oxygenBR,
+#pl3.oxygen h2,
+#pl3.oxygen img.prdGrpImg,
+#pl3.oxygen table.product tbody td {
+	border-color: #ac9067;
+}
+
+/* Text colour */
+
+.darkgreyT,
+#pl3,
+#pl3 a,
+#popupcontent,
+#products a,
+#products h2 {
+	color: #292929;
+}
+
+
+.airwayT,
+#pl3.airway h1,
+#pl3.airway span.code {
+	color: #00aec5;
+}
+
+.anaesthesiaT,
+#pl3.anaesthesia h1,
+#pl3.anaesthesia span.code {
+	color: #8077b7;
+}
+
+.criticalT,
+#pl3.critical h1,
+#pl3.critical span.code {
+	color: #009470;
+}
+
+.oxygenT,
+#pl3.oxygen h1,
+#pl3.oxygen span.code {
+	color: #f68428;
+}

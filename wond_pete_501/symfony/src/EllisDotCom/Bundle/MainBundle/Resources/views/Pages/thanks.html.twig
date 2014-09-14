@@ -1,0 +1,15 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# thanks page extends the base twig template and defines its content as below #}
+    <section id="content">
+        <article class="row">
+            <h3 id="inlineHeader" class="span2 smaller">THANKS!</h3>
+            <a id="return" href="{{ path('EllisDotCom_shop') }}" class="span2 text-right">BACK TO SHOP</a>    
+        </article>
+        {% for flashMessage in app.session.flashbag.get('notice') %}
+            <div class="flash-notice alert alert-success">
+                {{ flashMessage }}
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}

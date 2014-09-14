@@ -1,0 +1,44 @@
+{% extends 'EllisDotComMainBundle:Admin:dashboard.html.twig' %}
+{% block adminView %}
+	<div>
+		<h3 class="smaller">ADD A NEW RECORD TO {{ table|upper }}</h3>
+		{# form used to call controller function via the POST method #}
+		{{ form_start(form, {'action': path('EllisDotCom_CreateAction',{ table: table }), 'method': 'POST'}) }}
+
+		{% if table == 'portfolio' %}
+
+		{{ form_row(form.title) }}
+		{{ form_row(form.category) }}
+		{{ form_row(form.description) }}
+		{{ form_row(form.tags) }}
+		{{ form_row(form.aspect) }}
+		{{ form_row(form.file) }}
+		<div>(maximum image width of 940px please!)</div>
+
+		{% elseif table == 'categories' %}
+
+		{{ form_row(form.category) }}
+		{{ form_row(form.file) }}
+		<div>(add 300x300px images only)</div>
+
+		{% elseif table == 'products' %}
+
+		{{ form_row(form.name) }}
+		{{ form_row(form.description) }}
+		{{ form_row(form.price) }}
+		{{ form_row(form.stock) }}
+		{{ form_row(form.file) }}
+		<div>(add 500x500px images only)</div>
+
+		{% endif %}
+
+		{{ form_errors(form) }}
+
+		<div class="adminControls">
+			<input type="submit" value="CREATE" id="form_save" class="btn btn-success"/>
+			<a href="{{ path('EllisDotCom_ListView', { table: table }) }}" class="btn btn-inverse">CANCEL</a>
+		</div>
+		
+        {{ form_end(form) }}
+	</div>
+{% endblock %}

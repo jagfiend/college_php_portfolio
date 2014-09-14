@@ -1,0 +1,3 @@
+ellis_dot_com_main:
+    resource: "@EllisDotComMainBundle/Resources/config/routing.yml"
+    prefix:   /

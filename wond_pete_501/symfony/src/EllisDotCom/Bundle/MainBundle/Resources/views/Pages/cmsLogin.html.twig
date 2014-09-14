@@ -1,0 +1,29 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# cmsLogin page extends the base twig template and defines its content as below #}
+            <section id="content">
+                <article class="row">
+                    <h3 class="text-center smaller">CMS LOG IN</h3>
+                    <form action="{{ path('login_check') }}" method="post" class="form-horizontal span6 offset3">
+                        <!-- username input -->
+                        <div class="control-group">
+                            <label for="username" class="control-label span2">USERNAME:</label>
+                            <input type="text" id="username" name="_username" value="{{ last_username }}"/>
+                        </div>
+                        <!-- password input -->
+                        <div class="control-group">
+                            <label for="password" class="control-label span2">PASSWORD:</label>
+                            <input type="password" id="password" name="_password" />
+                        </div>
+                        {# area for error messages... #}
+                        {% if error %}
+                            <div class="text-center span12 alert alert-error">{{ error.message }}</div>
+                        {% endif %}
+                        <!-- submit button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-inverse">LOG KATE IN</button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+{% endblock %}

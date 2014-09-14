@@ -1,0 +1,21 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# category page extends the base twig template and defines its content as below #}
+    <section id="content">
+        <h3 id="inlineHeader" class="smaller">{{ slug|upper }}</h3>
+        <a id="return" href="{{ path('EllisDotCom_portfolio') }}">BACK TO CATEGORIES</a>
+        <ul class="row thumbnails">
+            {# twig for loop creates bootstrap thumbnail of each image under selected category... #}                    
+            {% for image in images %}
+                <li class="span3 show show-first">
+                    <a href="{{ path('EllisDotCom_image', {slug: image.slug}) }}" class="thumbnail">
+                        <div class="imageFrame">
+                            <img src="{{ asset ('img/portfolio/'~image.filename~'') }}" class="categoryImage {{ image.aspect }}"/>
+                            <div class="littlecaption text-center littlemask mask">{{ image.title|upper }}</div>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

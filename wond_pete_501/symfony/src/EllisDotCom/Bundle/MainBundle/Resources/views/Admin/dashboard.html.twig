@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    {# note that dashboard does not extend the base class, this is because the header, nav and footer ares not required #}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="screen">
+        <title>Kate Ellis Illustration CMS</title>
+    </head>
+    <body>
+        <section id="cmsContent">
+            <h3 id="inlineHeader" class="smaller">CMS DASHBOARD</h3>
+            <a id="return" href="{{ path('logout') }}">LOGOUT</a>
+            {% block adminView %}
+                {# block to navigate between tables... #}
+                {% block cmsNav %}
+                    <ul id="cmsNav" class="nav nav-pills">
+                        {% for link in links %}
+                            <li><a href="{{ path('EllisDotCom_ListView', { table: link }) }}">{{ link|upper }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endblock %}
+                {# listview block updates with view of selected table... #}
+                {% block listView %}
+                        <p>CLICK A TABLE NAME ABOVE TO VIEW RECORDS...</p>
+                {% endblock %}
+            {% endblock %}
+        </section>
+    </body>
+</html>

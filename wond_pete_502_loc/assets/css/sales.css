@@ -1,0 +1,277 @@
+/* @override http://localhost:8888/css/sales.css */
+
+#intro h1 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #4b9e8c;
+}
+
+#left {
+	margin-left: 10px;
+	float: left;
+	width: 500px;
+	overflow: hidden;
+}
+
+#right {
+	overflow: hidden;
+	clear: none;
+	float: right;
+}
+
+ #intro {
+	margin-top: 15px;
+	width: 500px;
+	margin-left: 20px;
+}
+
+ #intro p {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	line-height: 19px;
+}
+
+ #intro ul {
+	margin-bottom: 15px;
+}
+
+ #intro ul li {
+	margin-top: 2px;
+	font-size: 13px;
+}
+
+#map {
+	margin-top: 30px;
+}
+
+#map img{
+	width:480px;
+	margin: 10px;
+}
+
+#map span {
+	margin-left: 120px;
+}
+
+ .break {
+	clear: both;
+}
+
+
+#datafield {
+	float: right;
+	}
+
+ #datafield span.area {
+	margin-left: 10px;
+	display: inline-block;
+	background-color: #dcd8a5;
+	padding: 4px 10px 2px;
+	color: #373737;
+	font-size: 12px;
+}
+
+ #datafield .person {
+	background-color: #f5f1b8;
+	border: 1px solid #dcd8a5;
+	width: 350px;
+	float: none;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 5px 20px 10px;
+}
+
+ #datafield a:hover {
+	text-decoration: underline;
+}
+
+ #datafield h2 {
+	margin-top: 10px;
+	margin-bottom: 2px;
+	font-size: 17px;
+}
+
+ #datafield .title {
+	font-style: italic;
+	font-size: 11px;
+	margin-bottom: 15px;
+}
+
+
+ #datafield .address {
+	background: url(http://media.intersurgical.com/global/elements/icons/icon_vcard.gif) no-repeat 0 top;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	padding-left: 23px;
+	margin-left: -2px;
+}
+
+ #datafield .phone {
+	background: url(http://media.intersurgical.com/global/elements/icons/icon_call.gif) no-repeat left center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+
+}
+
+ #datafield a.email {
+	background:	url(http://media.intersurgical.com/global/elements/icons/icon_mailto.gif) no-repeat left center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	display: block;
+	color: #0a78cb;
+}
+
+/* Form */
+
+
+p.form_info {
+	font-size: 12px;
+	display: inline-block;
+	color: #6f6f6f;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+div.contact_form {
+	overflow: visible;
+	float: right;
+	width: 392px;
+	clear: both;
+	margin-right: 10px;
+}
+
+div.contact_form span.area {
+	
+	display: inline-block;
+	background-color: #4b9d8b;
+	padding: 4px 10px 2px;
+	color: #fcfeff;
+	font-size: 12px;
+}
+
+#country {
+	margin-left: 30px;
+}
+
+#contact {
+	background-color: #f5f1b8;
+	overflow: hidden;
+	border: 1px solid #dcd8a5;
+	border-top-style: none;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.contact_form label {
+	display: block;
+	font-size: 12px;
+	text-align: left;
+	margin-top: 4px;
+	font-weight: bold;
+	padding-left: 30px;
+	color: #484848;
+}
+
+div.contact_form p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.contact_form input.text {
+	width: 335px;
+	margin-left: 30px;
+}
+
+div.contact_form textarea {
+	width: 340px;
+	height: 130px;
+	margin-left: 30px;
+}
+
+div.contact_form #send {
+	display: inline-block;
+	float: right;
+	margin-right: 19px;
+	border-style: none;
+	margin-bottom: 10px;
+}
+
+div.contact_form #name {
+	display: none;
+}
+
+div.contact_form span.hiba {
+	color: #ad1500;
+	font-size: 12px;
+	display: inline-block;
+	margin-top: 5px;
+	padding-left: 30px;
+	font-style: italic;
+}
+
+#intro.contact {
+	height: 60px;
+	margin-top: 30px;
+	padding-top: 20px;
+	float: left;
+	padding-left: 20px;
+}
+
+div.contact_form h2 {
+	background: url(http://media.intersurgical.com/global/elements/form.jpg) no-repeat 20px 0;
+	padding-top: 4px;
+	padding-left: 70px;
+	padding-bottom: 8px;
+}
+
+div.contact_s {
+	padding-left: 20px;
+}
+
+div.contact_s h2.email {
+	background: url(http://media.intersurgical.com/global/elements/email.jpg) no-repeat;
+	padding-left: 50px;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	height: 28px;
+}
+
+div.contact_s h2.phone {
+	background: url(http://media.intersurgical.com/global/elements/phone.jpg) no-repeat left 3px;
+	padding-left: 50px;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	height: 28px;
+}
+
+div.contact_s h2.address {
+	background: url(http://media.intersurgical.com/global/elements/mail.jpg) no-repeat left 3px;
+	padding-left: 50px;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	height: 28px;
+}
+
+#datafield p.address a {
+	float: none;
+	margin-top: 5px;
+}
+
+div.contact_s p {
+	margin: -12px 0 20px;
+	padding-left: 50px;
+}
+
+div.contact_s a.showMap {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+/* tooltip */
+#tt {position:absolute; display:block; background:url(http://media.intersurgical.com/uk/images/pages/sales_areas/tt_left.gif) top left no-repeat}
+#tttop {display:block; height:5px; margin-left:5px; background:url(http://media.intersurgical.com/uk/images/pages/sales_areas/tt_top.gif) top right no-repeat; overflow:hidden}
+#ttcont {display:block; padding:2px 12px 3px 7px; margin-left:5px; background:#666; color:#FFF}
+#ttbot {display:block; height:5px; margin-left:5px; background:url(http://media.intersurgical.com/uk/images/pages/sales_areas/tt_bottom.gif) top right no-repeat; overflow:hidden}

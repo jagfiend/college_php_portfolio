@@ -1,0 +1,32 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# home page extends the base twig template and defines its content as below #}
+    <section id="content">
+        {# scripts for bootstrap carousel #}
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="{{ asset ('js/bootstrap.js') }}"></script>
+        {# html code for bootstrap carousel #}
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{ asset ('img/gallery/img01.jpg') }}" alt="001">
+                </div>
+                <div class="item">
+                    <img src="{{ asset ('img/gallery/img02.jpg') }}" alt="002">
+                </div>
+                <div class="item">
+                    <img src="{{ asset ('img/gallery/img03.jpg') }}" alt="003">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+    </section>
+    {# script to trigger image change functionality once page loads.. #}
+    <script>$('.carousel').carousel('cycle')</script>
+{% endblock %}      

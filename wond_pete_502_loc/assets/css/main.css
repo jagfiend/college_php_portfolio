@@ -1,0 +1,144 @@
+/* @override 
+	http://localhost:8888/css/main.css
+*/
+
+/* Fix - Structure */
+
+.float_l {
+	float: left;
+}
+
+.float_r {
+	float: right;
+}
+
+#main {
+	width: 768px;
+	float: left;
+	height: 250px;
+}
+
+#products {
+	width: 960px;
+	/*width: 768px; original size... */
+	float: left;
+}
+
+#sidebar {
+	padding-top:5px;
+	width: 178px;
+	float: right;
+	height: 240px;
+	/*height: 500px; original height... */
+	margin-right: 14px;
+}
+
+#main .about_comp {
+	width: 230px;
+	height: 230px;
+	margin: 10px;
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/about_new.jpg) no-repeat;
+	/*background: url(http://media.intersurgical.com/uk/images/pages/main/about_new.jpg) no-repeat;*/
+	overflow: hidden;
+	cursor: pointer;
+	line-height: 19px;
+	font-size: 11px;
+}
+
+#main .about_comp strong {display: block; font-size: 13px; margin-bottom: 16px;}
+
+#main .about_comp a { padding: 65px 10px 10px; display: block;}
+
+#products .product_g {
+	width: 179px;
+	margin-left: 10px;
+	cursor: pointer;
+	height: 220px;
+}
+
+#products .product_g h2 {
+	text-align: center;
+	font-size: 13px;
+	padding-bottom: 2px;
+	margin-bottom: 12px;
+}
+
+#products .product_g h2 a {display: block; padding-top: 130px;color: white;}
+
+#products .product_g p {
+	font-size: 11px;
+	line-height: 15px;
+}
+
+#products .product_g a { display: block;padding-left: 5px;
+	padding-right: 5px;}
+
+#products .product_g.airway h2 {
+	background: #00aec5 url(http://localhost:8888/wond_pete_502_loc/assets/img/p1Air.jpg) no-repeat 0 top;}
+#products .product_g.airway {
+	/*background: #a6e7ef url(http://localhost:8888/wond_pete_502_loc/assets/img/bottom_airway.jpg) no-repeat 0 bottom;*/
+	background: #a6e7ef;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#products .product_g.anaesthesia h2 {
+	background:  #8077b7 url(http://localhost:8888/wond_pete_502_loc/assets/img/p1Anaes.jpg) no-repeat 0 top;
+}
+#products .product_g.anaesthesia {
+	/*background: #d4d1e7 url(http://localhost:8888/wond_pete_502_loc/assets/img/bottom_anaes.jpg) no-repeat 0 bottom;*/
+	background: #d4d1e7;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#products .product_g.critical h2 {
+	background: #009470 url(http://localhost:8888/wond_pete_502_loc/assets/img/p1Critical.jpg) no-repeat 0 top;
+}
+#products .product_g.critical {
+	/*background: #b3dfd4 url(http://localhost:8888/wond_pete_502_loc/assets/img/bottom_critical.jpg) no-repeat 0 bottom;*/
+	background: #b3dfd4;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#products .product_g.oxygen h2 {
+	background: #f68428 url(http://localhost:8888/wond_pete_502_loc/assets/img/p1Oxygen.jpg) no-repeat 0 top;
+	
+}
+#products .product_g.oxygen {
+	/*background: #fcdabf url(http://localhost:8888/wond_pete_502_loc/assets/img/bottom_oxygen.jpg) no-repeat 0 bottom;*/
+	background: #fcdabf;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#products .product_g.aerosol h2 {
+
+	background: #fee77e url(http://localhost:8888/wond_pete_502_loc/assets/img/aerosol.jpg) no-repeat 0 top;
+}
+#products .product_g.aerosol {
+	/*background: #fcdabf url(http://localhost:8888/wond_pete_502_loc/assets/img/bottom_oxygen.jpg) no-repeat 0 bottom;*/
+	background: #fcf1c0;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+/* Adlets */
+
+#main .big_adlet {
+	width: 508px;
+	margin-top: 10px;
+	margin-right: 10px;
+	height: 230px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#sidebar .adlet {
+	margin-top: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+	height: 154px;
+	overflow: hidden;
+}

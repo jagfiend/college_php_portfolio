@@ -1,0 +1,150 @@
+# Routing for homepage...
+EllisDotCom_homepage:
+    pattern:  /
+    defaults: { _controller: EllisDotComMainBundle:StaticPage:index }
+    requirements:
+        _method:  GET
+# Routing for news page...
+EllisDotCom_news:
+    pattern:  /news
+    defaults: { _controller: EllisDotComMainBundle:StaticPage:news }
+    requirements:
+        _method:  GET
+# Routing for portfolio page...
+EllisDotCom_portfolio:
+    pattern:  /portfolio
+    defaults: { _controller: EllisDotComMainBundle:Portfolio:portfolio }
+    requirements:
+        _method:  GET
+# Routing for category page...
+EllisDotCom_category:
+    pattern:  /category/{slug}
+    defaults: { _controller: EllisDotComMainBundle:Portfolio:category, slug: slug }
+    requirements:
+        _method:  GET
+# Routing for image page...
+EllisDotCom_image:
+    pattern:  /image/{slug}
+    defaults: { _controller: EllisDotComMainBundle:Portfolio:image, slug: slug }
+    requirements:
+        _method:  GET
+# Routing for about page...
+EllisDotCom_about:
+    pattern:  /about
+    defaults: { _controller: EllisDotComMainBundle:StaticPage:about }
+    requirements:
+        _method:  GET
+# Routing for contact page...
+EllisDotCom_contact:
+    pattern:  /contact
+    defaults: { _controller: EllisDotComMainBundle:StaticPage:contact }
+    requirements:
+        _method:  GET
+# Routing for shop page...
+EllisDotCom_shop:
+    pattern:  /shop
+    defaults: { _controller: EllisDotComMainBundle:Shop:shop }
+    requirements:
+        _method:  GET
+# Routing for product page...
+EllisDotCom_product:
+    pattern:  /product/{slug}
+    defaults: { _controller: EllisDotComMainBundle:Shop:product, slug: slug }
+    requirements:
+        _method:  GET
+# Routing for basket page...
+EllisDotCom_basket:
+    pattern:  /basket
+    defaults: { _controller: EllisDotComMainBundle:Shop:basket }
+    requirements:
+        _method:  GET
+# Routing for thanks page...
+EllisDotCom_thanks:
+    pattern:  /thanks
+    defaults: { _controller: EllisDotComMainBundle:Shop:thanks }
+    requirements:
+        _method:  GET
+# Routing for adding an item to the basket...
+EllisDotCom_addItemToBasket:
+    pattern:  /addItemToBasket/{slug}
+    defaults: { _controller: EllisDotComMainBundle:Basket:addItemToBasket, slug: slug }
+    requirements:
+        _method:  POST
+# Routing for removing an item from the basket...
+EllisDotCom_removeItemFromBasket:
+    pattern:  /removeItemFromBasket/{index}/{slug}
+    defaults: { _controller: EllisDotComMainBundle:Basket:removeItemFromBasket, index: index, slug: slug }
+    requirements:
+        _method:  GET
+# Routing for clearing the basket...
+EllisDotCom_clearBasket:
+    pattern:  /clearBasket
+    defaults: { _controller: EllisDotComMainBundle:Basket:clearBasket }
+    requirements:
+        _method:  GET
+# Routing for checking out the basket...
+EllisDotCom_checkoutBasket:
+    pattern:  /checkoutBasket
+    defaults: { _controller: EllisDotComMainBundle:Basket:checkoutBasket }
+    requirements:
+        _method:  GET
+# Routing for login page...
+login:
+    pattern:  /login
+    defaults: { _controller: EllisDotComMainBundle:login:login }
+    requirements:
+        _method:  GET
+# Routing for login check..
+login_check:
+    pattern:   /login_check
+# Routing for logout...
+logout:
+    pattern:   /logout
+# Routing for admin dashboard page...
+EllisDotCom_Dashboard:
+    pattern:  /dashboard
+    defaults: { _controller: EllisDotComMainBundle:AdminDashboard:view }
+    requirements:
+        _method:  GET
+# Routing for admin list view...
+EllisDotCom_ListView:
+    pattern:  /dashboard/{table}
+    defaults: { _controller: EllisDotComMainBundle:AdminListView:view }
+    requirements:
+        _method:  GET
+# Routing for admin create view...
+EllisDotCom_CreateView:
+    pattern:  /dashboard/create/{table}
+    defaults: { _controller: EllisDotComMainBundle:AdminCreate:view }
+    requirements:
+        _method:  GET
+# Routing for admin create action...
+EllisDotCom_CreateAction:
+    pattern:  /dashboard/create/{table}
+    defaults: { _controller: EllisDotComMainBundle:AdminCreate:create }
+    requirements:
+        _method:  POST
+# Routing for admin edit view...
+EllisDotCom_EditView:
+    pattern:  /dashboard/edit/{table}/{id}
+    defaults: { _controller: EllisDotComMainBundle:AdminEdit:view }
+    requirements:
+        _method:  GET
+# Routing for admin edit action...
+EllisDotCom_EditAction:
+    pattern:  /dashboard/edit/{table}/{id}
+    defaults: { _controller: EllisDotComMainBundle:AdminEdit:update }
+    requirements:
+        _method:  POST
+# Routing for delete view...
+EllisDotCom_DeleteView:
+    pattern:  /dashboard/delete/{table}/{id}
+    defaults: { _controller: EllisDotComMainBundle:AdminDelete:view }
+    requirements:
+        _method:  GET    
+# Routing for delete action...
+EllisDotCom_DeleteAction:
+    pattern:  /dashboard/delete/{table}/{id}
+    defaults: { _controller: EllisDotComMainBundle:AdminDelete:delete }
+    requirements:
+        _method:  POST        

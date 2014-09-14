@@ -1,0 +1,5 @@
+parameters:
+#    ellis_dot_com_main.example.class: EllisDotCom\Bundle\MainBundle\Example
+
+services:
+#  services for ellisdotcom admin...

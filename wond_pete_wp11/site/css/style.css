@@ -1,0 +1,474 @@
+/* CSS STYLESHEET FOR WP01 PROJECT */
+/* ////////////////////////// START OF STYLE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Meyer's reset applied to clean CSS */
+/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126 | License: none (public domain) */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, abbr, img, ol, ul, li, form, label, table, tr, th, td, footer, header 
+{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+/* ////////////////////////// BODY STYLE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+body
+{
+	background-color:#EBEBEB;
+	font-family:helvetica,arial,sans-serif;
+	color:#000000;
+}
+/* ////////////////////////// HEADING STYLE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+h1
+{
+	font-size:400%;
+	padding:10px 0px 0px 20px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+h2
+{
+	font-size:120%;
+	padding:5px 0px; 
+}
+h3
+{
+	font-size:110%;
+	padding:5px 0px; 
+} 
+/* ////////////////////////// PSEUDO CLASS STYLE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+a, a:link, a:visited
+{ 
+	color:#000000;
+	text-decoration:none;
+} 
+a:hover   
+{
+	color:#888888;
+	text-decoration:none;
+}
+a:active
+{
+	text-decoration:none;	
+} 
+/* ////////////////////////// STYLE FOR GENERIC STRUCTURE \\\\\\\\\\\\\\\\\ */
+#wrapper
+{
+	margin:0 auto;
+	width:960px;
+	min-height:100%;
+}
+#banner
+{
+	position:relative;
+	width:100%;
+	height:80px;
+	background:#000000;
+	/* linear gradient defined at http://www.colorzilla.com/gradient-editor */
+	background: -moz-linear-gradient(top, rgba(51,51,51,0.9) 0%, rgba(25,25,25,0.95) 50%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,0.9)), color-stop(50%,rgba(25,25,25,0.95)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	border-radius:0px 0px 20px 20px;
+	box-shadow:0px 3px 3px #AAA;
+}
+#logo
+{
+	position:relative;
+	float:left;
+	width:33.33%;
+	height:80px;
+}
+#navigation
+{
+	float:left;
+	width:33.33%;
+	height:80px;
+}
+#navigation a, #navigation a:link,#navigation a:visited
+{ 
+	color:#FFFFFF;
+	text-decoration:none;
+	text-align:center;
+} 
+#navigation a:hover   
+{
+	color:#888888;
+	text-decoration:none;
+}
+#navigation a:active
+{
+	text-decoration:none;	
+} 
+.guestNavButton
+{
+	float:left;
+	display:inline;
+	width:120px;
+	height:30px;
+	margin:20px 10px 0px 10px;
+	padding-top:3%; 
+	font-size:150%;
+}
+.loggedNavButton
+{
+	float:left;
+	display:inline;
+	width:30%;
+	height:30px;
+	margin:20px 10px 0px 0px;
+	padding-top:3%;
+	font-size:130%;
+}
+#search
+{
+	float:left;
+	width:33.33%;
+	height:80px;
+}
+#searchButton
+{
+	width:20px;
+	height:20px;
+}
+#search input[type="text"] 
+{
+    font-size:120%;
+    color:#888888;
+    width:270px;
+    margin:20px 0px 0px 0px;
+    padding:6px 15px;
+    border-radius:15px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.5) inset;
+}
+#content 
+{
+	clear:both;
+	position:relative;
+	width:100%;
+}
+button:hover
+{
+	color:#888888;
+}
+.blurb
+{
+	position:relative;
+	width:400px;
+	height:30px;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:110%;
+	text-align:center;
+	padding-top:10px;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+.formDesign
+{
+	position:relative;
+	width:400px;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:110%;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+table
+{
+	position:relative;
+	width:99%;
+	margin:0 auto;
+	margin-top:10px;
+}
+th
+{
+	margin:0px;
+	padding:5px 0px;
+	text-align:left;
+	min-width:75px;
+}
+td
+{
+	margin:0px;
+	padding:2px 0px;
+	text-align:left;
+}
+.formLabel
+{
+	text-align:right;
+}
+form input
+{
+    width:225px;
+    margin:10px 0px 0px 10px;
+    padding:5px;
+    font-size:105%;
+    text-align:left;
+    border-radius:10px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.5) inset;
+}
+.longInput
+{
+	width:425px;
+    margin:10px 0px 0px 0px;
+    padding:5px;
+    font-size:105%;
+    text-align:left;
+    border-radius:10px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.5) inset;
+}
+.radio
+{
+	width:30px;
+}
+.errorText
+{
+	color:#df0225;
+	margin:7.5px 0px;
+}
+.submitButton
+{
+	display:block;
+	width:150px;
+	height:40px;
+	margin:0 auto;
+	margin-top:15px;
+	margin-bottom:25px;
+	text-align:center;
+	font-size:110%;
+	color:#FFFFFF;
+	background-color:#000000;
+	/* linear gradient defined at http://www.colorzilla.com/gradient-editor */
+	background: -moz-linear-gradient(top, rgba(51,51,51,0.9) 0%, rgba(25,25,25,0.95) 50%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,0.9)), color-stop(50%,rgba(25,25,25,0.95)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	border-radius:15px;
+	box-shadow:0px 2px 2px #AAAAAA;
+}
+#footer
+{
+	clear:both;
+	position:relative;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:33.33%;
+	background-color:#FFFFFF; 
+	border-radius:10px;
+	box-shadow:0px 3px 3px #AAAAAA;
+	font-size:90%;
+	text-align:center;
+	padding:1% 0%;
+}
+/* ////////////////////////// STYLE FOR PAGE SPECIFIC STRUCTURE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* INDEX PAGE */
+#contentPageBlurb
+{
+	position:relative;
+	width:940px;
+	height:30px;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	margin:10px 10px 0px 10px;
+	font-size:110%;
+	text-align:center;
+	padding-top:10px;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+.indexSmallThumb
+{
+	position:relative;
+	float:left;
+	width:220px;
+	height:220px;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	margin:10px;
+	text-align:center;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+.indexSmallThumb img
+{
+	width:170px;
+	height:170px;
+	margin-top:15px;
+}
+.indexSmallThumb h2
+{
+	font-size:95%;
+}
+.pageControls
+{
+	clear:both;
+	position:relative;
+	margin:0 auto;
+	width:33.33%;
+	background-color:#FFFFFF; 
+	border-radius:10px;
+	box-shadow:0px 3px 3px #AAAAAA;
+	font-size:90%;
+	text-align:center;
+	padding:1% 0%;
+}
+.pageControls ul
+{
+	display:inline-block;
+	position:relative; 
+	list-style:none;
+}
+.pageControls ul li
+{
+	position:relative;
+	display:inline;
+}
+/* SEARCH PAGE */
+.largeContent
+{
+	position:relative;
+	width:920px;
+	/*height:400px;*/
+	background-color:#FFFFFF;
+	border-radius:10px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+.largeContent p 
+{
+	padding: 5px 0px;
+}
+/* SIGNUP PAGE */
+
+/* LOG IN PAGE */
+
+/* STREAM PAGE */
+#buttonFrame
+{
+	position:relative;
+	width:400px;
+	height:80px;
+	margin:0 auto;
+	margin-top:10px;
+	padding-bottom:2px;
+}
+.contentNavButton
+{
+	width:400px;
+	height:80px;
+	text-align:center;
+	font-size:160%;
+	color:#FFFFFF;
+	background-color:#000000;
+	/* linear gradient defined at http://www.colorzilla.com/gradient-editor */
+	background: -moz-linear-gradient(top, rgba(51,51,51,0.9) 0%, rgba(25,25,25,0.95) 50%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,0.9)), color-stop(50%,rgba(25,25,25,0.95)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(51,51,51,0.9) 0%,rgba(25,25,25,0.95) 50%,rgba(0,0,0,1) 100%);
+	border-radius:15px;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+.indexLargeThumb
+{
+	position:relative;
+	width:400px;
+	height:400px;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+.indexLargeThumb img
+{
+	margin-top:25px;
+	margin-bottom:10px;
+}
+/* CREATE PAGE */
+#editor
+{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+textarea
+{
+	position:relative;
+	margin:0 auto;
+}
+/* POST SUCCESS */
+.successBlurb
+{
+	position:relative;
+	width:800px;
+	height:30px;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:110%;
+	text-align:center;
+	padding-top:10px;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+/* ADMIN PAGE */
+.deleteButton
+{
+	display:block;
+	width:150px;
+	height:30px;
+	margin:0 auto;
+	margin-top:25px;
+	margin-bottom:25px;
+	text-align:center;
+	padding-top:10px;
+	background-color:#FF0000;
+	border-radius:15px;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+/* SUPPORT PAGE */
+
+/* CMS */
+.largeContentCMS
+{
+	position:relative;
+	width:1024px;
+	background-color:#FFFFFF;
+	border-radius:10px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	box-shadow:0px 3px 3px #AAAAAA;
+}
+.largeContentCMS p 
+{
+	padding: 5px 0px;
+}
+.pushRight
+{
+	padding: 0% 1%;
+	list-style:none;
+}
+/* ///////////////////////// END OF STYLESHEET \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */

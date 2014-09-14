@@ -1,0 +1,32 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# shop page extends the base twig template and defines its content as below #}
+    <section id="content">
+        <article class="row">
+            <h3 class="span2 smaller">SHOP</h3>
+            <p class="span6 offset4 text-right">
+                <a href="{{ path('EllisDotCom_basket') }}">ITEMS IN BASKET: {{ basket.basketTotalItems }}
+                    {# conditional updates basket image when more than one item in the basket #}
+                    {% if basket.basketTotalItems == 0 %}
+                        <img src="{{ asset ('img/style/sadSack.jpg') }}">
+                    {% else %}
+                        <img src="{{ asset ('img/style/happySack.jpg') }}">
+                    {% endif %}
+                </a>
+            </p>
+        </article>
+        <article>
+            <ul class="thumbnails">
+                {# twig for loop creates thumbnail of each product in the database... #}
+                {% for product in products %}
+                    <li class="span4">
+                        <a href="{{ path('EllisDotCom_product', { slug: product.slug }) }}" class="thumbnail">
+                            <img src="{{ asset ('img/products/'~product.filename~'') }}">
+                            <div class="text-center">{{ product.name|upper }} £{{ product.price|number_format(2) }}</div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </article>
+    </section>
+{% endblock %}

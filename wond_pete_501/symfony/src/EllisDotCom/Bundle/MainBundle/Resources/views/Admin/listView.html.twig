@@ -1,0 +1,135 @@
+{% extends 'EllisDotComMainBundle:Admin:dashboard.html.twig' %}
+{# this listView template gives the illusion to the user that they are on single more dynamic page than they perhaps really are... #}
+{% block cmsNav %}
+    <ul id="cmsNav" class="nav nav-pills">
+        {% for link in links %}
+            {# conditional checks for and prints out active link... #}
+            {% if link == table %}
+                <li class="active"><a href="{{ path('EllisDotCom_ListView', { table: link }) }}">{{ link|upper }}</a></li>
+            {% else %}
+                <li><a href="{{ path('EllisDotCom_ListView', { table: link }) }}">{{ link|upper }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
+{% block listView %}
+    {# conditional prevents create button appearing on view of orders table... #}
+    {% if table != 'orders' %}
+        <a href="{{ path('EllisDotCom_CreateView', { table: table}) }}" class="btn btn-inverse">CREATE NEW RECORD</a>
+    {% endif %}
+    {# area for flash messages... #}
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+    <div class="flash-notice alert alert-success">
+        {{ flashMessage }}
+    </div>
+    {% endfor %}
+    <table class="table table-striped table-hover">
+        {# conditional to print out html appropriate to selected table... #}
+        {# for portfolio table... #}
+        {% if table == 'portfolio' %}
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Category</td>
+                    <td>Created at</td>
+                    <td>Updated at</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                {# loop over rows and build table as appropriate... #}
+                <tr>
+                    <td>{{ row.title }}</td>
+                    <td>{{ row.category }}</td>
+                    <td>{{ row.createdAt|date('H:i d-m-Y') }}</td>
+                    <td>{{ row.updatedAt|date('H:i d-m-Y') }}</td>
+                    <td><a href="{{ path('EllisDotCom_EditView', { table: table, id: row.id }) }}"><i class="icon-pencil"></i></a></td>
+                    <td><a href="{{ path('EllisDotCom_DeleteView', { table: table, id: row.id }) }}"><i class="icon-trash"></i></a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        {# for categories table... #}
+        {% elseif table == 'categories' %}
+            <thead>
+                <tr>
+                    <td>Category</td>
+                    <td>Created at</td>
+                    <td>Updated at</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                {# loop over rows and build table as appropriate... #}
+                <tr>
+                    <td>{{ row.category }}</td>
+                    <td>{{ row.createdAt|date('H:i d-m-Y') }}</td>
+                    <td>{{ row.updatedAt|date('H:i d-m-Y') }}</td>
+                    <td><a href="{{ path('EllisDotCom_EditView', { table: table, id: row.id }) }}"><i class="icon-pencil"></i></a></td>
+                    <td><a href="{{ path('EllisDotCom_DeleteView', { table: table, id: row.id }) }}"><i class="icon-trash"></i></a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        {# for products table... #}
+        {% elseif table == 'products' %}
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Stock</td>
+                    <td>Created at</td>
+                    <td>Updated at</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                {# loop over rows and build table as appropriate... #}
+                <tr>
+                    <td>{{ row.name }}</td>
+                    <td>{{ row.stock }}</td>
+                    <td>{{ row.createdAt|date('H:i d-m-Y') }}</td>
+                    <td>{{ row.updatedAt|date('H:i d-m-Y') }}</td>
+                    <td><a href="{{ path('EllisDotCom_EditView', { table: table, id: row.id }) }}"><i class="icon-pencil"></i></a></td>
+                    <td><a href="{{ path('EllisDotCom_DeleteView', { table: table, id: row.id }) }}"><i class="icon-trash"></i></a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        {# for orders table... #}
+        {% elseif table == 'orders' %}
+            <thead>
+                <tr>
+                    <td>Order Id</td>
+                    <td>Items</td>
+                    <td>Order Total</td>
+                    <td>Created at</td>
+                    <td>Updated at</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                {# loop over rows and build table as appropriate... #}
+                <tr>
+                    <td>{{ row.id }}</td>
+                    <td>
+                        {# first for loop runs over the indices of each item in the basket array... #}
+                        {% for keys, index in row.items|keys %}
+                            {# second for loop runs over detail of each item by index... #}
+                            {% for key, item in row.items[index] %}
+                                {{ key }}x{{ item.amount }}
+                            {% endfor %}
+                        {% endfor %}
+                    </td>
+                    <td>{{ row.orderTotal|number_format(2) }}</td>
+                    <td>{{ row.createdAt|date('H:i d-m-Y') }}</td>
+                    <td>{{ row.updatedAt|date('H:i d-m-Y') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        {# end of conditional... #}
+        {% endif %}
+    </table>
+{% endblock %}

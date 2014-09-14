@@ -1,0 +1,39 @@
+{% extends 'EllisDotComMainBundle:Admin:dashboard.html.twig' %}
+{% block adminView %}
+	<div>
+		<h3 class="smaller">EDIT {{ table|upper }} RECORD</h3>
+		{# form used to call controller function via the POST method #}
+		{{ form_start(form, {'action': path('EllisDotCom_EditAction',{ table: table, id: record.id }), 'method': 'POST'}) }}
+
+		{% if table == 'portfolio' %}
+
+		{{ form_row(form.title) }}
+		{{ form_row(form.category) }}
+		{{ form_row(form.description) }}
+		{{ form_row(form.tags) }}
+		{{ form_row(form.aspect) }}
+		
+
+		{% elseif table == 'categories' %}
+
+		{{ form_row(form.category) }}
+
+		{% elseif table == 'products' %}
+
+		{{ form_row(form.name) }}
+		{{ form_row(form.description) }}
+		{{ form_row(form.price) }}
+		{{ form_row(form.stock) }}
+
+		{% endif %}
+
+		{{ form_errors(form) }}
+
+		<div class="adminControls">
+			<input type="submit" value="EDIT" id="form_save" class="btn btn-warning"/>
+			<a href="{{ path('EllisDotCom_ListView', { table: table }) }}" class="btn btn-inverse">CANCEL</a>
+		</div>
+		
+        {{ form_end(form) }}
+	</div>
+{% endblock %}

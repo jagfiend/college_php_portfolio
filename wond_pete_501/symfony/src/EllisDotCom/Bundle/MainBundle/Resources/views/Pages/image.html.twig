@@ -1,0 +1,13 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+            <section id="content">
+                <article class="row">
+                    <img id="artwork" src="{{ asset ('img/portfolio/'~image.filename~'') }}" class="span6 offset3 thumbnail">
+                </article>
+                <article class="text-center">
+            	        <h3 class="smaller">{{ image.title|upper }}</h3>
+                        <p class="imageDescription">{{ image.description }}</p>
+                        <a href="{{ path('EllisDotCom_category') }}/{{ category.category }}">BACK TO {{ category.category|upper }} PAGE</a>
+                </article>
+            </section>
+{% endblock %}

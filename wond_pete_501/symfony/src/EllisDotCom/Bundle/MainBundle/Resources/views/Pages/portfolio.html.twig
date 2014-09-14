@@ -1,0 +1,18 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# portfolio page extends the base twig template and defines its content as below #}
+    <section id="content">
+        <h3 class="smaller">PORTFOLIO</h3>
+        <ul class="row thumbnails">
+            {# twig loop creates bootstrap thumbnail of each category in the database... #}
+            {% for category in categories %}
+                <li class="span4 show show-first">
+                    <a href="{{ path('EllisDotCom_category') }}/{{ category.category }}" class="thumbnail">
+                        <img src="{{ asset ('img/categories/'~category.filename~'') }}"/>
+                        <div class="bigcaption text-center bigmask mask">{{ category.category|upper }}</div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

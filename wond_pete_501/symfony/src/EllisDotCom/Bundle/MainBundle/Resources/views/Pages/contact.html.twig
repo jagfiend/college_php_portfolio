@@ -1,0 +1,22 @@
+{% extends 'EllisDotComMainBundle:Pages:base.html.twig' %}
+{% block content %}
+{# contact page extends the base twig template and defines its content as below #}
+            <section id="content">
+                <h3 class="smaller">CONTACT</h3>
+                <div class="row">
+                    <article class="span6">
+                        <p>If you want to get in contact about any of the work you've seen on my site, please contact me via the email below:</p>
+                        <p>email: <a href="mailto:kate@kateellisillustration.com?Subject=Hello%20Kate">kate@kateellisillustration.com</a></p>
+                        <p>You can also contact me and keep up to date via my social media pages listed below:</p>
+                        <ul class="styled">
+                            <li><a href="https://www.facebook.com/kateellisillustration" target="blank">Facebook</a></li>
+                            <li><a href="https://twitter.com/ellistration" target="blank">Twitter</a></li>
+                            <li><a href="http://kateellisillustration.tumblr.com" target="blank">Tumblr</a></li>
+                        </ul>
+                    </article>
+                    <article class="span 6">
+                        <img src="{{ asset ('img/style/contact.jpg') }}">
+                    </article>
+                </div>
+            </section>
+{% endblock %}

@@ -1,0 +1,543 @@
+/* @override 
+	http://localhost:8888/css/pagesgeneral.css
+*/
+#intro {
+	width: 425px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+#intro h1, #intro_eco h1 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #4b9e8c;
+	
+}
+
+#intro p {
+	margin-bottom: 20px;
+}
+
+#about {
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.col3 {
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+
+.col3 p, #intro p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.col3 img {
+	margin: 20px auto;
+	width: 300px;
+}
+
+.col3 h2, .contact_form h2 {
+	color: #3f3f3f;
+	font-size: 16px;
+}
+
+.col3 ul {
+	margin-top: 20px;
+	font-size: 12px;
+}
+
+.col3 ul li {
+	margin-top: 5px;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.col3 p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.break {
+	clear: both;
+	height: 10px;
+}
+
+.button_col2 {
+	width: 140px;
+	height: 26px;
+	background-image: url(../../images/button_col2.jpg);
+	display: block;
+	text-align: center;
+	padding-top: 9px;
+	}
+	
+a.button_col2  {
+	color: white;
+}
+
+sup {
+	font-size: 9px;
+	margin-top: 64px;
+	vertical-align: super;
+}
+
+h3.eco {
+	display: block;
+	clear: both;
+	height: 27px;
+	background-image: url(http://localhost:8888/wond_pete_502_loc/assets/img/button_bg.jpg);
+	color: white;
+	font-size: 16px;
+	padding-top: 7px;
+	margin-right: 20px;
+	padding-bottom: 1px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding-left: 22px;
+	margin-left: 10px;
+}
+
+#products {
+	clear: both;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 45px;
+}
+
+p#eco {
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/eco.jpg) no-repeat 126px top;
+	height: 83px;
+	padding-top: 14px;
+	margin-top: 30px;
+	padding-right: 179px;
+	padding-left: 17px;
+	color: #009b7b;
+	font-size: 13px;
+}
+
+p.sterile_option {
+	font-weight: bold;
+	background: url(../../images/sterile_white.jpg) no-repeat;
+	height: 25px;
+	padding-top: 2px;
+	padding-left: 30px;
+	margin-left: 5px;
+}
+
+p.form_info {
+	font-size: 12px;
+	display: inline-block;
+	color: #6f6f6f;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+div.contact_form {
+	width: 460px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	float: right;
+	margin-top: 50px;
+}
+
+div.contact_form form {
+	background-color: #d9ece6;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	overflow: auto
+}
+
+div.contact_form label {
+	display: block;
+	float: left;
+	width: 80px;
+	font-size: 12px;
+	text-align: right;
+	margin-top: 4px;
+	padding-right: 12px;
+	font-weight: bold;
+	color: #4b9e8c;
+	margin-left: 10px;
+}
+
+div.contact_form div.errorContainer {
+	margin-left: 104px;
+	font-size: 12px;
+	margin-top: 3px;
+	color: #b01600;
+	font-style: italic;
+	margin-bottom: 14px;
+	}
+
+div.contact_form p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.contact_form input[type="text"]{
+	width: 335px;
+}
+
+div.contact_form textarea {
+	width: 340px;
+	height: 130px;
+}
+
+div.contact_form #send {
+	display: inline-block;
+	float: right;
+	margin-right: 19px;
+	border-style: none;
+}
+
+div.contact_form #name {
+	display: none;
+}
+
+div.contact_form span.hiba {
+	color: #ad1500;
+	font-size: 12px;
+	padding-left: 112px;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+#intro.contact {
+	height: 60px;
+	margin-top: 30px;
+	padding-top: 20px;
+	float: left;
+	padding-left: 20px;
+}
+
+div.contact_form h2 {
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/form.jpg) no-repeat 20px 0;
+	padding-top: 4px;
+	padding-left: 70px;
+	padding-bottom: 8px;
+}
+
+div.contact_s {
+	padding-left: 20px;
+}
+
+div.contact_s h2.email {
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/email.jpg) no-repeat;
+	padding-left: 50px;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	height: 28px;
+}
+
+div.contact_s h2.phone {
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/phone.jpg) no-repeat left 3px;
+	padding-left: 50px;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	height: 28px;
+}
+
+div.contact_s h2.address {
+	background: url(http://localhost:8888/wond_pete_502_loc/assets/img/mail.jpg) no-repeat left 3px;
+	padding-left: 50px;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	height: 28px;
+}
+
+div.contact_s p {
+	margin: -12px 0 20px;
+	padding-left: 50px;
+}
+
+div.contact_s a.showMap {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+/* Facefit */
+body.facefit a.awesome_button { margin-top: 5px; margin-bottom: 15px;}
+
+/* Thankyou */
+body.thankyou h1 {
+	color: #4b9e8c;
+	font-size: 20px;
+	margin-top: 140px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body.thankyou #content p {
+		width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 220px;
+}
+
+
+/*
+#intro.sterile {
+	background: url(../../images/2009/sterile/sterile_logo.jpg) no-repeat right 0;
+	height: 111px;
+	width: 540px;
+	margin-top: 50px;
+	padding-top: 30px;
+	padding-left: 170px;
+}
+
+#intro.silverknight {
+	background: url(../../images/2009/silverknight/silverknight_logo.jpg) no-repeat right 0;
+	height: 111px;
+	width: 540px;
+	margin-top: 50px;
+	padding-top: 30px;
+	padding-left: 170px;
+}
+*/
+
+#intro_eco {
+	width: 760px;
+	padding-top: 300px;
+	background: url(http://media.intersurgical.com/global/images/pages/eco/headz.jpg) no-repeat 36px 0;
+	margin: 0 auto 60px;
+}
+
+#masks {
+	margin-top: -15px;
+	margin-bottom: 0;
+}
+
+#headz {
+	
+	width: 247px;
+	height: 305px;
+	position: absolute;
+	top: 80px;
+	left: 490px;
+	z-index: 11;
+	background: url(http://media.intersurgical.com/global/images/pages/eco/head.png) no-repeat;
+}
+
+#ecologo {
+	background-image: url(http://media.intersurgical.com/global/images/pages/eco/eco.jpg);
+	width: 164px;
+	height: 100px;
+	position: absolute;
+	top: 212px;
+	right: 80px;
+}
+
+p.eco_p {
+	margin-top: 29px;
+}
+
+/* Distributors page */
+
+body.distributors #left {
+	float: left;
+}
+
+body.distributors #intro {
+	float: left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+body.distributors #intro ul {
+	margin-bottom: 15px;
+}
+
+body.distributors #intro ul li {
+	margin-top: 2px;
+	font-size: 13px;
+}
+
+body.distributors ul.subs {
+	float: left;
+}
+
+
+body.distributors ul.subs li {
+	padding-left: 40px;
+	padding-bottom: 7px;
+		padding-top: 7px;
+	margin-bottom: 15px;
+	width: 100px;
+	margin-right: 20px;
+	cursor: pointer;
+	color: #666;
+}
+
+body.distributors ul.subs li:hover {
+	color: black;
+}
+
+body.distributors .break {
+	clear: both;
+}
+
+
+body.distributors #country_list {
+	float:right;
+	margin-top: 110px;
+	font-size: 12px;
+	line-height: 18px;
+	margin-right: 80px;
+}
+
+body.distributors #country_list p {
+	margin-bottom: 10px;
+}
+
+body.distributors #distributor {
+	float: right;
+	margin-right: 70px;
+	margin-top: 33px;
+}
+
+body.distributors #distributor .company {
+	
+	margin: 20px 10px;
+	background-color: #f5f1b8;
+	padding: 5px 20px 10px;
+	border: 1px solid #dcd8a5;
+	width: 300px;
+	float: none;
+}
+
+body.distributors #distributor a:hover {
+	text-decoration: underline;
+}
+
+body.distributors #distributor h2 {
+	margin-top: 10px;
+	margin-bottom: 2px;
+	font-size: 17px;
+}
+
+body.distributors #distributor .range {
+	font-style: italic;
+	font-size: 11px;
+	margin-bottom: 15px;
+}
+
+body.distributors #distributor .contact {
+	background: url(http://media.intersurgical.com/global/elements/icons/user.gif) no-repeat 0 top;
+	display: block;
+	padding-left: 20px;
+}
+
+body.distributors #distributor .address {
+	background: url(http://media.intersurgical.com/global/elements/icons/icon_vcard.gif) no-repeat 0 top;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	padding-left: 23px;
+	margin-left: -2px;
+}
+
+body.distributors #distributor .phone {
+	background: url(http://media.intersurgical.com/global/elements/icons/icon_call.gif) no-repeat left center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+
+}
+
+body.distributors #distributor a.website {
+	background: url(http://media.intersurgical.com/global/elements/icons/external_icon.gif) no-repeat left center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	display: block;
+	color: #0a78cb;
+}
+
+body.distributors #distributor a.email {
+	background:	url(http://media.intersurgical.com/global/elements/icons/icon_mailto.gif) no-repeat left center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	display: block;
+	color: #0a78cb;
+}
+
+/* Flags */
+
+ul.subs li.fr {	background: url(http://media.intersurgical.com/global/elements/flags/fr_small.jpg) no-repeat left center; }
+ul.subs li.de {	background: url(http://media.intersurgical.com/global/elements/flags/de_small.jpg) no-repeat left center; }
+ul.subs li.sp {	background: url(http://media.intersurgical.com/global/elements/flags/sp_small.jpg) no-repeat left center; }
+ul.subs li.ru {	background: url(http://media.intersurgical.com/global/elements/flags/ru_small.jpg) no-repeat left center; }
+ul.subs li.sa {	background: url(http://media.intersurgical.com/global/elements/flags/sa_small.jpg) no-repeat left center; }
+ul.subs li.po {	background: url(http://media.intersurgical.com/global/elements/flags/po_small.jpg) no-repeat left center; }
+ul.subs li.ne {	background: url(http://media.intersurgical.com/global/elements/flags/ne_small.jpg) no-repeat left center; }
+ul.subs li.li {	background: url(http://media.intersurgical.com/global/elements/flags/li_small.jpg) no-repeat left center; }
+ul.subs li.cz {	background: url(http://media.intersurgical.com/global/elements/flags/cz_small.jpg) no-repeat left center; }
+ul.subs li.jp {	background: url(http://media.intersurgical.com/global/elements/flags/jp_small.jpg) no-repeat left center; }
+ul.subs li.ph {	background: url(http://media.intersurgical.com/global/elements/flags/ph_small.jpg) no-repeat left center; }
+ul.subs li.us {	background: url(http://media.intersurgical.com/global/elements/flags/us_small.jpg) no-repeat left center; }
+ul.subs li.it {	background: url(http://media.intersurgical.com/global/elements/flags/it_small.jpg) no-repeat left center; }
+ul.subs li.ta {	background: url(http://media.intersurgical.com/global/elements/flags/ta_small.jpg) no-repeat left center; }
+ul.subs li.uk {	background: url(http://media.intersurgical.com/global/elements/flags/uk_small.jpg) no-repeat left center; }
+
+/* Product list filtered */
+
+span.prnt_name {
+	font-size: 12px;
+	color: #454545;
+	margin-right: 20px;
+	margin-left: -20px;
+}
+
+/* Flitamask */
+body.filtamask #content ul li {
+	list-style-type: disc;
+	list-style-position: inside;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+body.filtamask #content img {
+	display: block;
+	float: right;
+	margin-bottom: -60px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+/* FAQ */
+
+body.faq #content h1 {
+	margin-left: 30px;
+	color: #009b7b;
+	font-size: 20px;
+	margin-top: 15px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin-right: 18px;
+}
+
+body.faq #content li {
+	display: block;
+	margin: 25px 190px 15px 130px;
+	line-height: 17px;
+}
+
+body.faq #content li h2 {
+	margin-bottom: 5px;
+}
+
+body.faq #content li a.awesome_button {
+	margin-top: 5px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>620 CMS Example</title>
+		
+		<!-- stylin' -->
+
+		<link rel="stylesheet" type="text/css" href="assets/css/easyui.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/stylin.css">
+
+		<!-- scriptin' -->
+
+		<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.easyui.js"></script>
+		<script type="text/javascript" src="assets/js/crud.js"></script>
+	</head>
+
+	<body>
+		<h2>620 CMS Example (PHP)</h2>
+		
+		<!-- user table mark up -->
+
+		<div id="toolbar">
+			<a href="#" class="easyui-linkbutton" plain="true" onclick="newUser()">New User</a>
+			<a href="#" class="easyui-linkbutton" plain="true" onclick="editUser()">Edit User</a>
+			<a href="#" class="easyui-linkbutton" plain="true" onclick="removeUser()">Remove User</a>
+		</div>
+
+		<table 	id="dg" title="Users Table" class="easyui-datagrid"
+				url="assets/php/get_users.php" method="get"
+				toolbar="#toolbar" pagination="false"
+				rownumbers="true" fitColumns="true" singleSelect="true">
+			<thead>
+				<tr>
+					<th field="username" width="50">Username</th>
+					<th field="email" width="75">Email</th>
+					<th field="password" width="75">Password</th>
+					<th field="createdAt" width="75">Create At</th>
+					<th field="modifiedAt" width="75">Modified At</th>
+				</tr>
+			</thead>
+		</table>
+
+		<!-- end of user table mark up -->
+		
+		<!-- dialog mark up -->
+
+		<div id="dlg" class="easyui-dialog" style="width:400px;height:280px;padding:10px 20px" closed="true" buttons="#dlg-buttons">
+			<div class="ftitle">User Information</div>
+			<form id="fm" method="post" novalidate>
+				<div class="fitem">
+					<label>Username:</label>
+					<input name="username" class="easyui-validatebox" required="true">
+				</div>
+				<div class="fitem">
+					<label>Email:</label>
+					<input name="email" class="easyui-validatebox" required="true">
+				</div>
+				<div class="fitem">
+					<label>Password:</label>
+					<input name="password" class="easyui-validatebox" required="true">
+				</div>
+			</form>
+		</div>
+		<div id="dlg-buttons">
+			<a href="#" class="easyui-linkbutton" onclick="testUser()">Test</a>
+			<a href="#" class="easyui-linkbutton" onclick="saveUser()">Save</a>
+			<a href="#" class="easyui-linkbutton" onclick="javascript:$('#dlg').dialog('close')">Cancel</a>
+		</div>
+
+		<!-- end of dialog mark up -->
+
+	</body>
+</html>

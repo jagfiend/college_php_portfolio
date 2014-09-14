@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>620 CMS Example (PHP)</title>
+		
+		<!-- styling -->
+	    <link rel="stylesheet" href="assets/stylesheets/bootstrap.css">
+
+	    <!-- scripting -->
+	   	<script src="assets/javascripts/jquery-1.11.1.min.js"></script>
+	    <script src="assets/javascripts/bootstrap.js"></script>
+		<script src="assets/javascripts/global.js"></script>
+	</head>
+
+	<body>
+		<h2>620 CMS Example (PHP)</h2>
+		
+		<!-- new user input -->
+		<form id="addUser" class='form-inline' role="form">
+			<input type='text' value='test user' id='inputUserName'>
+			<input type='text' value='test email' id='inputUserEmail'>
+			<input type='text' value='test pass' id='inputUserPassword'>
+
+			<button id="btnAddUser" type="submit" class="btn btn-default">Add</button>
+			<button id="btnRunTest" type="submit" class="btn btn-default">Test</button>
+		</form>
+
+		<!-- user table mark up -->
+
+		<table class="table table-striped">
+			<thead>
+				<th>Username</th>
+				<th>Email</th>
+				<th>Password</th>
+				<th>CreatedAt</th>
+				<th>ModifiedAt</th>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</body>
+</html>
