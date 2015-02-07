@@ -86,6 +86,8 @@ function addUser(event){
             'password': $('#addUser input#inputUserPassword').val(),
         }
 
+        console.log(newUser);
+
         // Use AJAX to post the object to our adduser service
         $.ajax({
             type: 'POST',

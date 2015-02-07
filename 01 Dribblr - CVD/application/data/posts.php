@@ -1,4 +1,13 @@
 <?php // posts data file...
+
+/**
+ * [createPost description]
+ * @param  [type] $userId   [description]
+ * @param  [type] $title    [description]
+ * @param  [type] $editor1  [description]
+ * @param  [type] $category [description]
+ * @return [type]           [description]
+ */
 function createPost($userId,$title,$editor1,$category){
 	$result = mysql_query("insert into posts(
 		userId,
@@ -20,6 +29,13 @@ function createPost($userId,$title,$editor1,$category){
 	}
 }
 
+
+/**
+ * [getAllPosts description]
+ * @param  [type] $subpage [description]
+ * @param  [type] $limit   [description]
+ * @return [type]          [description]
+ */
 function getAllPosts($subpage,$limit){ // function to return all posts on the home page...
 	$page = ($subpage * $limit) - $limit; // pagination calculation...
 	$result = mysql_query("
