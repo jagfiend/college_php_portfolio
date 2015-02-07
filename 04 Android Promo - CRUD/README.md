@@ -1,0 +1,1 @@
+In support of my Android game project developed in early 2014, to demonstrate data transfer between a mobile device and remote DB, I built this simple PHP scoreboard.

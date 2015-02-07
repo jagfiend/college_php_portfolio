@@ -1,0 +1,1 @@
+This localisation project from late 2013 looked at converting an UK medical company site for the Japanese market. I choose to use CodeIgniter to explore a different MVC framework.

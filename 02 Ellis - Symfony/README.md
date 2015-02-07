@@ -1,0 +1,1 @@
+A self directed, self taught Symfony2 project from mid 2013. My first experience of OOP / MVC PHP frameworks
