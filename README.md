@@ -1,5 +1,5 @@
-college_portfolio
-==================
+College PHP Portfolio
+=====================
 
 Portfolio of coding project work undertaken during web development degree
 
